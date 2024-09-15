@@ -1,0 +1,48 @@
+body{
+    background-color:azure;
+
+}
+
+.logo{
+    width: 200px;
+}
+
+.title{
+    font-size: 40px;
+}
+
+
+#principal{
+    font-size: 50px;
+    color: rgb(255, 196, 196);
+}
+
+#secundario{
+    font-size: 50px;
+    color:rgb(255, 196, 196);
+}
+
+#terceario{
+    font-size: 30px;
+    color: rgb(255, 205, 212);
+}
+
+#cuartuario{
+    color: rgb(255, 196, 196);
+}
+
+#quintuario{
+    color: rgb(255, 196, 196);
+}
+
+#sextuario{
+    color: rgb(255, 196, 196);
+}
+
+#septimario{
+    color: rgb(255, 196, 196);
+}
+
+#octavo{
+    color: rgb(255, 196, 196);
+}
