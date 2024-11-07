@@ -4,9 +4,82 @@ body{
     background-color:azure;
     margin: 0px;
     padding: 0px;
-    
-
 }
+
+.joinBtn {
+    width: 10em;
+    height: 5ex;
+    background-image: linear-gradient(135deg, #f34079 40%, #fc894d);
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .joinBtn:active {
+    box-shadow: 2px 2px 5px #fc894d;
+  }
+
+.social-button {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    background-color: #f1f1f1;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.social-button:hover {
+    background-color: #ddd;
+}
+
+/* Colores específicos para cada red social */
+.instagram {
+    background-color: #E4405F;
+    color: white;
+}
+
+.facebook {
+    background-color: #3B5998;
+    color: white;
+}
+
+.styled {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: rgba(220, 0, 0, 1);
+    background-image: linear-gradient(
+      to top left,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2) 30%,
+      rgba(0, 0, 0, 0)
+    );
+    box-shadow:
+      inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+      inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+  }
+  
+  .styled:hover {
+    background-color: rgba(255, 0, 0, 1);
+  }
+  
+  .styled:active {
+    box-shadow:
+      inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+      inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+  }  
 
 .logo{
     width: 200px;
@@ -16,6 +89,11 @@ body{
     font-size: 40px;
 }
 
+label {
+    padding-right: 10px;
+    font-size: 1rem;
+  }
+  
 
 #principal{
     width: 50px;
@@ -57,4 +135,37 @@ body{
 
 #octavo{
     color: rgb(255, 196, 196);
+}
+
+a[href^='mailto']::before {
+    content: '📧 ';
+  }
+  
+  a[href^='tel']::before {
+    content: '📞 ';
+  }
+
+  body {
+    height: 100%;  /* Asegura que el cuerpo ocupe todo el alto del navegador */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 100vw;    /* 100% del ancho del navegador */
+    height: 100vh;   /* 100% de la altura del navegador */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+h1 {
+    font-size: 5vw;  /* El tamaño de la fuente será relativo al ancho de la ventana */
+    color: #333;
 }

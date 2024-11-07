@@ -1,0 +1,178 @@
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFB800; /* Fondo mostaza */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #333;
+}
+
+h1.titulo {
+    font-size: 3em;
+    text-align: center;
+    color: #5F4B8B;
+    animation: efecto-titulo 2s ease-in-out;
+}
+/* Estilos para los enlaces de redes sociales */
+.redes-sociales {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.social-icon {
+    font-size: 30px;
+    margin: 10px;
+    color: #333; /* Color base */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: #FF6347; /* Cambiar color al pasar el ratón */
+}
+
+.social-icon i {
+    margin-right: 8px;
+}
+
+
+@keyframes efecto-titulo {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Barra de navegación */
+.nav-menu {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    right: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+
+.menu-btn, .historia-btn {
+    background-color: #5F4B8B;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 5px;
+}
+
+.menu-btn:hover, .historia-btn:hover {
+    background-color: #3C2F5C;
+}
+
+.menu-content {
+    display: list-item;
+}
+
+.menu-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-content ul li a {
+    text-decoration: none;
+    color: #5F4B8B;
+}
+
+.menu-btn:hover + .menu-content {
+    display: block;
+}
+
+/* Descripción */
+.descripcion-texto {
+    font-size: 1.2em;
+    margin: 20px auto;
+    width: 80%;
+    animation: efecto-descripcion 2s ease-in-out;
+}
+
+@keyframes efecto-descripcion {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Contenedor de las imágenes */
+.contenido-imagenes {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.imagen-contenedor {
+    margin-bottom: 20px;
+    width: 30%;
+    text-align: center;
+}
+
+.imagen-contenedor img {
+    width: 100%;
+    height: auto;
+    border: 5px solid #FF6347; /* Borde de colores vivos */
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.imagen-contenedor img:hover {
+    transform: scale(1.05);
+}
+
+/* Botones de compra y redes sociales */
+.botones-finales {
+    margin-top: 30px;
+}
+
+.compra-btn, .redes-btn {
+    padding: 10px 20px;
+    background-color: #FF6347;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.compra-btn:hover, .redes-btn:hover {
+    background-color: #D9534F;
+}
+
+.redes-sociales {
+    margin-top: 20px;
+}
+
+.redes-sociales a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #5F4B8B;
+    font-size: 1.2em;
+}
+
+.redes-sociales a:hover {
+    color: #FF6347;
+}
+
+/* Estilo para las imágenes con el mismo tamaño */
+.imagen {
+    width: 100%;            /* Hace que la imagen ocupe el 100% del contenedor */
+    max-width: 400px;       /* Define un ancho máximo para evitar que las imágenes se estiren demasiado */
+    height: auto;           /* Mantiene la proporción de la imagen */
+    display: block;         /* Asegura que la imagen esté centrada y no se mezcle con otros elementos */
+    margin: 0 auto;         /* Centra la imagen dentro de su contenedor */
+    border: 5px solid #FF6347; /* Agrega un borde de color vibrante alrededor de la imagen */
+    border-radius: 8px;     /* Da bordes redondeados a las imágenes */
+}
+
+/* Puedes añadir más reglas si lo necesitas, como el efecto hover */
+.imagen:hover {
+    opacity: 0.9; /* Efecto de opacidad al pasar el mouse por encima */
+}
+
